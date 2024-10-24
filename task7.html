@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+function addZero(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+
+ function currenttime(){
+const d = new Date();
+let hour = addZero(d.getHours());
+let minutes = addZero(d.getMinutes());
+let seconds = addZero(d.getSeconds());
+let time = hour + ":" + minutes + ":" + seconds;
+
+console.log(time);
+ 
+}
+
+
+</script>
+
+
+
+<title>task7</title>
+
+</head>
+
+<body>
+
+<script>
+setInterval(currenttime, 1000);
+</script>
+
+</body>
+</html>
