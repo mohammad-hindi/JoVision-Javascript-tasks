@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+ function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+          let j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+function Button_one(){
+    var array = new Array(100);
+    for(let i = 0; i < 100; i++) {
+        array[i] = i + 1;
+    }
+
+    array = array.filter(item => item % 3 !== 0);
+    console.log(array);
+}
+function Button_two(){
+    var array = new Array(100);
+    for(let i = 0; i < 100; i++) {
+        array[i] = i + 1;
+    }
+ for(let i = 100; i < 150; i++) {
+        array.push(i + 1);
+    }
+  
+    console.log(array);
+}
+function Button_three(){
+
+
+    var array = new Array(100);
+    for(let i = 0; i < 100; i++) {
+        array[i] = i + 1;
+    }
+ for(let i = 0; i < 100; i++) {
+        array[i] += 3;
+    }
+  
+    console.log(array);
+}
+function Button_four(){
+    var array = new Array(100);
+    for(let i = 0; i < 100; i++) {
+        array[i] = i + 1;
+    }
+ for(let i = 19; i <= 39; i++) {
+        console.log(array[i]);
+    }
+  
+   
+}
+function Button_five(){
+    var array = new Array(100);
+    for(let i = 0; i < 100; i++) {
+        array[i] = i + 1;
+    }
+	shuffleArray(array);
+    console.log(array);
+	 array.sort(function(a, b){return b - a});
+	 console.log(array);
+	 
+}
+
+</script>
+
+
+
+<title>task6</title>
+
+</head>
+
+<body>
+
+<button onclick="Button_one()">Button one</button>
+<button onclick="Button_two()">Button two</button>
+<button onclick="Button_three()">Button three</button>
+<button onclick="Button_four()">Button four</button>
+<button onclick="Button_five()">Button five</button>
+</body>
+</html>
