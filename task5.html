@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+    var array = new Array(100);
+    var sum = 0;
+    for(let i = 0; i < 100; i++) {
+       	   array[i] = i + 1;
+      if(i % 2 == 0)
+	  sum += array[i];
+    }
+    console.log("Sum: " + sum);
+
+}
+</script>
+
+<title>task4</title>
+
+</head>
+
+<body>
+
+<button onclick="myFunction()">Click me</button>
+
+</body>
+</html>
